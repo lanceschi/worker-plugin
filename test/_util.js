@@ -16,7 +16,8 @@
 
 import path from 'path';
 import webpack from 'webpack';
-import CleanPlugin from 'clean-webpack-plugin';
+// import CleanPlugin from 'clean-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 
 export function sleep (ms) {
@@ -48,9 +49,11 @@ export function runWebpack (fixture, { output, plugins, terserOptions, ...config
       ]
     },
     plugins: [
-      new CleanPlugin([
-        path.resolve(__dirname, 'fixtures', fixture, 'dist', '**')
-      ])
+      new CleanWebpackPlugin(
+        {
+          cleanAfterEveryBuildPatterns: path.resolve(__dirname, 'fixtures', fixture, 'dist', '**')
+        }
+      )
     ].concat(plugins || []),
     ...config
   }, callback));
