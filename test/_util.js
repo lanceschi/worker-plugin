@@ -16,7 +16,6 @@
 
 import path from 'path';
 import webpack from 'webpack';
-// import CleanPlugin from 'clean-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 
