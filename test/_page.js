@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-export async function evaluatePage (url, matches, timeout = 10000) {
+export async function evaluatePage (url, matches, timeout = 30000) {
   const args = await puppeteer.defaultArgs();
   const browser = await puppeteer.launch({
     args: [
