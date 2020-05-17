@@ -23,3 +23,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - serve-handler ^5.0.7 → ^6.1.2
 - terser-webpack-plugin ^2.3.5 → ^3.0.1
 - puppeteer ^1.11.0 → ^3.0.4
+- webpack ^4.26.1 → ^4.43.0
