@@ -1,10 +1,8 @@
 import { version } from 'webpack';
 import WorkerPlugin4 from './webpack-4';
+import WorkerPlugin5 from './webpack-5';
 
-// Just a placeholder for now
-const WorkerPlugin5 = '';
-
-// Retrieving only the major version numerical value
+// Retrieving only webpack major version numerical value
 const majorVersionNum = parseInt(version.split('.')[0]);
 
 // Parametrically serve webpack4 or webpack5 plugin variant

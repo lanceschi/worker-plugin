@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Separating webpack4 and the new webpack5 plugin logic with file structure
 - Moved webpack4 plugin files to a separate `src/webpack-4` sub-folder
+- Created a separate `src/webpack-5` sub-folder
+
 
 ### Changed
 - clean-webpack-plugin ^1.0.0  →  ^3.0.0"
@@ -28,3 +30,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - terser-webpack-plugin ^2.3.5 → ^3.0.1
 - puppeteer ^1.11.0 → ^3.0.4
 - webpack ^4.26.1 → ^4.43.0
+- webpack ^4.43.0 → ^5.0.0-beta.16
