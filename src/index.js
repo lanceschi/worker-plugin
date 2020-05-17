@@ -1,12 +1,15 @@
 import { version } from 'webpack';
-import WorkerPlugin4 from './webpack-4';
-import WorkerPlugin5 from './webpack-5';
+let WorkerPlugin;
 
 // Retrieving only webpack major version numerical value
 const majorVersionNum = parseInt(version.split('.')[0]);
 
-// Parametrically serve webpack4 or webpack5 plugin variant
-const WorkerPlugin = majorVersionNum <= 4 ? WorkerPlugin4 : WorkerPlugin5;
+// Parametrically require webpack4 or webpack5 plugin variant
+if (majorVersionNum <= 4) {
+  WorkerPlugin = require('./webpack-4');
+} else {
+  WorkerPlugin = require('./webpack-5');
+}
 
 // Export the plugin class reference to the outer world
-export default WorkerPlugin;
+export default WorkerPlugin.default;
