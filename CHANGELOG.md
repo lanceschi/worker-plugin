@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
-
+- clean-webpack-plugin ^1.0.0  →  ^3.0.0"
 - @file-services/memory ^1.0.3 → ^2.2.0
 - @file-services/node ^1.0.3 → ^2.2.0
 - @file-services/overlay ^1.0.3 → ^2.2.0
