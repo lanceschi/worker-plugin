@@ -1,5 +1,5 @@
 import { version } from 'webpack';
-import WorkerPlugin4 from './index-webpack-4';
+import WorkerPlugin4 from './webpack-4';
 
 // Just a placeholder for now
 const WorkerPlugin5 = '';

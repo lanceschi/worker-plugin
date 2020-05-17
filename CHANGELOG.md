@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Separating webpack4 and the new webpack5 plugin logic with file structure
+- Moved webpack4 plugin files to a separate `src/webpack-4` sub-folder
 
 ### Changed
 - clean-webpack-plugin ^1.0.0  →  ^3.0.0"
